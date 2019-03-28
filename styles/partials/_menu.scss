@@ -1,0 +1,131 @@
+.bakedgood {
+	font-family: $font-2;
+	display: flex;
+	margin-bottom: 30px;
+	width: 100%;
+	
+	.header {
+		width: 30%;
+		background-color: $background-color;
+		margin-right: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: auto;
+
+		img {
+			height: 60%;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.right {
+		width: 65%;
+		display: flex;
+		background-color: $background-color;
+
+		.special {
+			padding: 0 30px;
+			// border: $border;
+			width: calc(100% / 3);
+		}
+	}
+
+	.notSpecial {
+		// width: 30%;
+		align-items: center;
+		padding: 30px;
+	}
+	
+	ul {
+		padding-inline-start: 0;
+	}
+	
+	li {
+		padding: 5px;
+		list-style-type: circle;
+		line-height: 25px;
+		// border: 1px solid red;
+
+	}
+	
+	.selectedFlav {
+		background-color: $cupcake-accent;
+		border-radius: 5px;
+	}
+
+	.selectedFrost {
+		background-color: $cupcake-accent-2;
+		border-radius: 5px;
+	}
+
+	.selectedOtherCake {
+		background-color: $primary;
+		border-radius: 5px;
+	}
+
+	.selectedSquare {
+		background-color: $square-accent;
+		border-radius: 5px;
+	}
+
+	.selectedTart {
+		background-color: $tart-accent;
+		border-radius: 5px;
+	}
+
+	.selectedOther {
+		background-color: $other-accent;
+		border-radius: 5px;
+	}
+}
+
+@media (max-width: 950px) {
+	
+	.bakedgood {
+		flex-direction: column;
+		align-items: center;
+		
+		.header {
+			width: 70%;
+			margin-right: 0;
+		}
+		
+		h2 {
+			margin-top: 20px;
+		}
+
+		.right {
+			flex-direction: column;
+			width: 70%;
+
+			.special {
+				width: 100%;
+			}
+		}
+
+		p {
+			line-height: 25px;
+    		text-align: center;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	main .wrapper {
+		width: 100%;
+	}
+
+	.bakedgood {
+
+		.header {
+			width: 85%;
+		}
+
+		.right {
+			width: 85%;
+		}
+	}
+}

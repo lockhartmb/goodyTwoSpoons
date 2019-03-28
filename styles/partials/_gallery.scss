@@ -1,0 +1,64 @@
+.galleryContent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+	.galleryItem {
+		max-width: 300px;
+		position: relative;
+		margin-bottom: 30px;
+
+		&:hover .overlay {
+			opacity: 1;
+		}
+
+		img {
+			border-radius: 50%;
+		}
+	}
+	
+	.overlay {
+		position: absolute;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.5);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		transition: opacity $transition;
+		font-family: $font-2;
+		text-align: center;
+		border: $border-hover;
+
+
+		p {
+			margin: 45% auto;
+			font-size: 2rem;
+			width: 75%;
+		}
+	}
+}
+
+.CTA {
+	max-width: 500px;
+	width: 90%;
+	margin: 20px auto 0;
+	padding: 20px;
+	text-align: center;
+	font-family: $font-1;
+	font-size: 3rem;
+	border: $border;
+	background-color: $primary;
+	border-radius: 10px;
+	transition: border $transition;
+
+	a {
+		text-decoration: none;
+		color: $font-color;
+	}
+	
+	&:hover {
+		border: $border-hover;
+	}
+}

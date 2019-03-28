@@ -1,0 +1,13 @@
+.prices {
+	text-align: center;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.priceContent ul:first-of-type {
+		padding-bottom: 50px;
+	}
+}
