@@ -172,7 +172,7 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.visuallyhidden:not(:focus):not(:active) {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -214,9 +214,10 @@ img {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: block; }
 
-h1 {
+h2 {
   font-family: "Parisienne", cursive;
   font-size: 3rem;
   color: #232323;
@@ -226,7 +227,7 @@ h1 {
   text-transform: lowercase;
   letter-spacing: 0px; }
 
-h2 {
+h3 {
   border: 5px solid #656665;
   font-size: 1.5rem;
   border-radius: 10px;
@@ -235,7 +236,7 @@ h2 {
   text-align: center;
   margin: auto; }
 
-h3 {
+h4 {
   font-size: 1.1rem; }
 
 p {
@@ -414,72 +415,70 @@ nav {
   .CTA:hover {
     border: 5px solid #656665; }
 
-.bakedgood {
-  font-family: "Cabin", sans-serif;
+.bakedGood {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 30px;
   width: 100%; }
-  .bakedgood .header {
+  .bakedGood .bakedGoodHeader {
     width: 30%;
     background-color: #fbfbf2;
-    margin-right: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: auto; }
-    .bakedgood .header img {
-      height: 60%;
-      margin: 0;
-      padding: 0; }
-  .bakedgood .right {
+    margin-right: 30px; }
+    .bakedGood .bakedGoodHeader h3 {
+      margin: 20px auto; }
+  .bakedGood .bakedGoodOptions {
     width: 65%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #fbfbf2; }
-    .bakedgood .right .special {
-      padding: 0 30px;
-      width: calc(100% / 3); }
-  .bakedgood .notSpecial {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #fbfbf2;
+    padding-left: 20px; }
+  .bakedGood .special {
+    padding: 0 30px;
+    width: calc(100% / 3); }
+  .bakedGood .notSpecial {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     padding: 30px; }
-  .bakedgood ul {
+  .bakedGood ul {
     -webkit-padding-start: 0;
     padding-inline-start: 0; }
-  .bakedgood li {
+  .bakedGood li {
     padding: 5px;
     list-style-type: circle;
     line-height: 25px; }
-  .bakedgood .selectedFlav {
+  .bakedGood .selectedFlav {
     background-color: #958fb8;
     border-radius: 5px; }
-  .bakedgood .selectedFrost {
+  .bakedGood .selectedFrost {
     background-color: #cc903a;
     border-radius: 5px; }
-  .bakedgood .selectedOtherCake {
+  .bakedGood .selectedOtherCake {
     background-color: #b4c9fe;
     border-radius: 5px; }
-  .bakedgood .selectedSquare {
+  .bakedGood .selectedSquare {
     background-color: #fed76d;
     border-radius: 5px; }
-  .bakedgood .selectedTart {
+  .bakedGood .selectedTart {
     background-color: #fbc0c6;
     border-radius: 5px; }
-  .bakedgood .selectedOther {
+  .bakedGood .selectedOther {
     background-color: #c3d7c0;
     border-radius: 5px; }
 
@@ -519,6 +518,8 @@ nav {
 
 .prices {
   text-align: center; }
+  .prices h3 {
+    border: none; }
   .prices ul {
     list-style: none;
     margin: 0;

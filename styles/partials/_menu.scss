@@ -1,46 +1,43 @@
-.bakedgood {
-	font-family: $font-2;
+.bakedGood {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	margin-bottom: 30px;
 	width: 100%;
-	
-	.header {
+
+	.bakedGoodHeader {
 		width: 30%;
 		background-color: $background-color;
 		margin-right: 30px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		height: auto;
 
-		img {
-			height: 60%;
-			margin: 0;
-			padding: 0;
+		h3 {
+			margin: 20px auto;
 		}
 	}
 
-	.right {
+	.bakedGoodOptions {
 		width: 65%;
 		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		background-color: $background-color;
+		padding-left: 20px;
+	}
 
-		.special {
-			padding: 0 30px;
-			width: calc(100% / 3);
-		}
+	.special {
+		padding: 0 30px;
+		width: calc(100% / 3);
 	}
 
 	.notSpecial {
 		align-items: center;
 		padding: 30px;
 	}
-	
+
 	ul {
 		padding-inline-start: 0;
 	}
-	
+
 	li {
 		padding: 5px;
 		list-style-type: circle;
@@ -51,32 +48,38 @@
 		background-color: $cupcake-accent;
 		border-radius: 5px;
 	}
-
+	
 	.selectedFrost {
 		background-color: $cupcake-accent-2;
 		border-radius: 5px;
 	}
-
+	
 	.selectedOtherCake {
 		background-color: $primary;
 		border-radius: 5px;
 	}
-
+	
 	.selectedSquare {
 		background-color: $square-accent;
 		border-radius: 5px;
 	}
-
+	
 	.selectedTart {
 		background-color: $tart-accent;
 		border-radius: 5px;
 	}
-
+	
 	.selectedOther {
 		background-color: $other-accent;
 		border-radius: 5px;
 	}
 }
+
+
+
+
+
+	
 
 @media (max-width: 950px) {
 	
