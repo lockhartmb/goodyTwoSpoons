@@ -186,7 +186,7 @@ template {
   overflow: hidden; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 125%; }
 
 body {
   font-size: 1.6rem;
@@ -218,7 +218,7 @@ img {
 
 h1 {
   font-family: "Parisienne", cursive;
-  font-size: 5.5rem;
+  font-size: 3rem;
   color: #232323;
   text-align: center;
   padding: 50px;
@@ -228,6 +228,7 @@ h1 {
 
 h2 {
   border: 5px solid #656665;
+  font-size: 1.5rem;
   border-radius: 10px;
   padding: 20px;
   max-width: 80%;
@@ -235,11 +236,19 @@ h2 {
   margin: auto; }
 
 h3 {
-  text-decoration: underline; }
+  font-size: 1.1rem; }
+
+p {
+  line-height: 1.6;
+  font-size: 1.2rem; }
+
+li {
+  font-size: 1rem; }
 
 header {
   background-color: #b4c9fe;
-  height: 100vh; }
+  height: 100vh;
+  padding: 1px 0; }
   header > .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -250,7 +259,7 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 90vh; }
+    height: 100%; }
   header img {
     max-width: 400px;
     width: 75%;
@@ -262,11 +271,9 @@ header {
 nav {
   position: fixed;
   width: 100%;
-  z-index: 2; }
-  nav .wrapper {
-    display: static; }
+  z-index: 2;
+  background-color: rgba(180, 201, 254, 0.4); }
   nav ul {
-    background-color: rgba(180, 201, 254, 0.4);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -282,20 +289,23 @@ nav {
     nav li a {
       font-family: "Cabin", sans-serif;
       color: #232323;
-      font-size: 1.8rem;
+      font-size: 1rem;
       text-decoration: none;
       text-transform: uppercase;
-      padding: 10px; }
+      padding: 10px 0; }
   nav li::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
+    bottom: 5px;
+    right: 0;
+    width: 0;
     height: 4px;
-    background-color: #656665; }
-  nav li:hover li::after {
-    width: 30px; }
+    background-color: #656665;
+    -webkit-transition: width 0.25s ease-in-out;
+    -o-transition: width 0.25s ease-in-out;
+    transition: width 0.25s ease-in-out; }
+  nav li:hover::after {
+    width: 40px; }
 
 .hamburger,
 .exit-responsive {
@@ -304,25 +314,23 @@ nav {
 .show.menu {
   display: block; }
 
-@media all and (max-width: 700px) {
+@media (max-width: 750px) {
   .hamburger,
   .exit-responsive {
     display: block;
-    font-size: 2.8rem;
+    font-size: 1.7rem;
     margin: 0;
-    padding: 20px; }
+    padding: 20px 0; }
+  .hamburger {
+    position: fixed;
+    padding-left: 20px; }
   nav {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #b4c9fe;
-    width: auto;
+    position: fixed;
+    background-color: rgba(180, 201, 254, 0.5);
+    width: 100%;
     height: 100vh;
-    border-radius: 10px;
-    border: 5px solid #656665; }
+    text-align: right; }
     nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -369,20 +377,31 @@ nav {
     transition: opacity 0.25s ease-in-out;
     font-family: "Cabin", sans-serif;
     text-align: center;
-    border: 5px solid #656665; }
+    border: 5px solid #656665;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .galleryContent .overlay p {
-      margin: 45% auto;
-      font-size: 2rem;
       width: 75%; }
 
 .CTA {
   max-width: 500px;
   width: 90%;
-  margin: 20px auto 0;
+  margin: 20px auto 0 auto;
   padding: 20px;
   text-align: center;
   font-family: "Parisienne", cursive;
-  font-size: 3rem;
+  font-size: 1.8rem;
   border: 5px solid transparent;
   background-color: #b4c9fe;
   border-radius: 10px;
@@ -492,7 +511,7 @@ nav {
 
 @media (max-width: 450px) {
   main .wrapper {
-    width: 100%; }
+    width: 90%; }
   .bakedgood .header {
     width: 85%; }
   .bakedgood .right {
@@ -524,7 +543,7 @@ nav {
 
 .about p {
   width: 50%;
-  padding: 20px; }
+  padding: 20px 0; }
 
 @media all and (max-width: 700px) {
   .about .flexContainer {
@@ -540,7 +559,8 @@ nav {
 footer {
   background-color: #b4c9fe;
   margin: 0;
-  padding: 20px 0; }
+  padding: 20px 0;
+  min-height: 100vh; }
   footer .flexContainer {
     display: -webkit-box;
     display: -ms-flexbox;

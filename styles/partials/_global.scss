@@ -1,5 +1,5 @@
 html {
-	font-size: 62.5%;
+	font-size: 125%;
 }
 
 body {
@@ -34,7 +34,7 @@ img {
 
 h1 {
 	font-family: $font-1;
-	font-size: 5.5rem;
+	font-size: 3rem;
 	color: $font-color;
 	text-align: center;
 	padding: 50px;
@@ -45,6 +45,7 @@ h1 {
 
 h2 {
 	border: $border-hover;
+	font-size: 1.5rem;
 	border-radius: 10px;
 	padding: 20px;
 	max-width: 80%;
@@ -53,5 +54,14 @@ h2 {
 }
 
 h3 {
-	text-decoration: underline;
+	font-size: 1.1rem;
+}
+
+p {
+	line-height: 1.6;
+	font-size: 1.2rem;
+}
+
+li {
+	font-size: 1rem;
 }

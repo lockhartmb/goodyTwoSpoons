@@ -28,13 +28,11 @@
 
 		.special {
 			padding: 0 30px;
-			// border: $border;
 			width: calc(100% / 3);
 		}
 	}
 
 	.notSpecial {
-		// width: 30%;
 		align-items: center;
 		padding: 30px;
 	}
@@ -47,8 +45,6 @@
 		padding: 5px;
 		list-style-type: circle;
 		line-height: 25px;
-		// border: 1px solid red;
-
 	}
 	
 	.selectedFlav {
@@ -115,7 +111,7 @@
 
 @media (max-width: 450px) {
 	main .wrapper {
-		width: 100%;
+		width: 90%;
 	}
 
 	.bakedgood {
