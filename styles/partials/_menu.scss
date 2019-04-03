@@ -7,7 +7,6 @@
 
 	.bakedGoodHeader {
 		width: 30%;
-		background-color: $background-color;
 		margin-right: 30px;
 
 		h3 {
@@ -22,20 +21,18 @@
 		justify-content: space-between;
 		background-color: $background-color;
 		padding-left: 20px;
-	}
-
-	.special {
-		padding: 0 30px;
-		width: calc(100% / 3);
-	}
-
-	.notSpecial {
-		align-items: center;
 		padding: 30px;
 	}
 
+	.special {
+		width: calc(100% / 3);
+		margin: 0 10px;
+	}
+
 	ul {
-		padding-inline-start: 0;
+		list-style-position: inside;
+		padding: 0;
+		margin: 0;
 	}
 
 	li {

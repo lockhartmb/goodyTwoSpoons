@@ -430,7 +430,6 @@ nav {
   width: 100%; }
   .bakedGood .bakedGoodHeader {
     width: 30%;
-    background-color: #fbfbf2;
     margin-right: 30px; }
     .bakedGood .bakedGoodHeader h3 {
       margin: 20px auto; }
@@ -447,18 +446,15 @@ nav {
     -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #fbfbf2;
-    padding-left: 20px; }
-  .bakedGood .special {
-    padding: 0 30px;
-    width: calc(100% / 3); }
-  .bakedGood .notSpecial {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    padding-left: 20px;
     padding: 30px; }
+  .bakedGood .special {
+    width: calc(100% / 3);
+    margin: 0 10px; }
   .bakedGood ul {
-    -webkit-padding-start: 0;
-    padding-inline-start: 0; }
+    list-style-position: inside;
+    padding: 0;
+    margin: 0; }
   .bakedGood li {
     padding: 5px;
     list-style-type: circle;
