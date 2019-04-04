@@ -11,7 +11,11 @@
 		padding: 0;
 	}
 
-	.priceContent ul:first-of-type {
+	.priceContent ul {
 		padding-bottom: 50px;
+	}
+
+	.priceContent li {
+		padding-bottom: 25px;
 	}
 }

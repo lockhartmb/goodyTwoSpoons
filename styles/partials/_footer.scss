@@ -1,96 +1,67 @@
 footer {
 	background-color: $primary;
-	margin: 0;
-	padding: 20px 0;
 	min-height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		color: inherit;
+	}
+
+	form {
+		width: 800px;
+		margin: 20px auto;
+		font-size: 1rem;
+	}
 
 	.flexContainer {
 		display: flex;
-		justify-content: space-around;
-	}
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 20px;
 
-	.left {
-		width: 30%;
+		input {
+			width: 48%;
+			border: none;
+			padding: 10px;
+			background-color: $background-color;
+		}
 		
-		img {
-			height: auto;
-			display: block;
-		}	
-	}
-
-	.right {
-		padding-top: 20px;
-	}
-
-	ul {
-		list-style: none;
-
-		p {
-			position: relative;
-			top: -35px;
-			left: 35px;
+		input:first-of-type {
+			margin-right: 20px;
 		}
 
-		a {
-			text-decoration: none;
-			color: inherit;
+		input::placeholder {
+			color: $font-color;
 		}
 	}
-	
-	.copyright {
-		text-align: center;
-	}
 
-}
+	textarea {
+		width: 100%;
+		border: none;
+		padding: 10px;
+		height: 150px;
+		margin-bottom: 20px;
+		background-color: $background-color;
 
-@media all and (max-width: 700px) {
-	
-	footer {
-		.flexContainer {
-			flex-direction: column;
-			
-			.chunk {
-				width: 70%;
-				justify-content: center;
-				align-items: center;
-				margin: 0 auto;
-			}
-
-			img {
-				margin: 0 auto;
-			}
-
-			ul {
-				padding: 0;
-			}
-
-			li {
-				text-align: center;
-				margin: 10px auto;
-			}
-
-			p {
-				position: static;
-				text-align: center;
-				margin: 0 auto;
-			}
+		&::placeholder {
+			color: $font-color;
 		}
 	}
-}
 
-@media (max-width: 450px) {
-	
-	footer {
-		.flexContainer {
-			
-			.left {
-				width: 70%;
-			}
-
-			.right {
-				width: 100%;
-			}
+	button {
+		max-width: 500px;
+		width: 30%;
+		padding: 10px;
+		border: $border;
+		background-color: $accent-4;
+		transition: border $transition;
+		
+		&:hover {
+			border: $border-hover;
 		}
-
 	}
 }

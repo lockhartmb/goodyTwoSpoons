@@ -2,7 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	
+
 	.galleryItem {
 		max-width: 300px;
 		position: relative;
@@ -11,55 +11,31 @@
 		&:hover .overlay {
 			opacity: 1;
 		}
-
-		img {
-			border-radius: 50%;
-		}
-	}
-	
-	.overlay {
-		position: absolute;
-		border-radius: 50%;
-		background-color: rgba(255, 255, 255, 0.5);
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		opacity: 0;
-		transition: opacity $transition;
-		font-family: $font-2;
-		text-align: center;
-		border: $border-hover;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		p {
-			width: 75%;
-		}
 	}
 }
 
 .CTA {
-	max-width: 500px;
-	width: 90%;
-	margin: 20px auto 0 auto;
-	padding: 20px;
-	text-align: center;
-	font-family: $font-1;
-	font-size: 1.8rem;
-	border: $border;
-	background-color: $primary;
-	border-radius: 10px;
-	transition: border $transition;
 
 	a {
 		text-decoration: none;
 		color: $font-color;
+		display: block;
+		width: 300px;
+		margin: 20px auto 0 auto;
+		padding: 20px;
+		text-align: center;
+		font-size: 1.5rem;
+		border: $border;
+		background-color: $accent-4;
+		transition: border $transition;
+		
+		&:hover {
+			border: $border-hover;
+		}
 	}
-	
-	&:hover {
-		border: $border-hover;
+
+	span {
+		padding-left: 20px;
 	}
+
 }

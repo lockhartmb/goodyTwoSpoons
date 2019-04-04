@@ -34,12 +34,26 @@ nav {
         right: 0;
         width: 0;
         height: 4px;
-        background-color: $secondary;
+        background-color: $accent-4;
         transition: width $transition;
     }
 
     li:hover::after {
         width: 40px;
+    }
+
+    .submenu {
+        // display: none;
+        display: flex;
+        position: absolute;
+
+        li {
+            padding: 0 20px;
+        }
+    }
+
+    .menuDropdown:hover .submenu {
+        
     }
 }
 

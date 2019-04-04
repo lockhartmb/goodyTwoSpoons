@@ -19,63 +19,66 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		background-color: $background-color;
 		padding-left: 20px;
 		padding: 30px;
 	}
 
 	.special {
-		width: calc(100% / 3);
-		margin: 0 10px;
+		width: 50%;
+		padding: 0 10px;
+	}
+
+	.description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	ul {
-		list-style-position: inside;
+		list-style: none;
 		padding: 0;
 		margin: 0;
 	}
 
 	li {
-		padding: 5px;
-		list-style-type: circle;
+		padding: 5px 0;
+		margin: 3px 0;
 		line-height: 25px;
 	}
 	
-	.selectedFlav {
-		background-color: $cupcake-accent;
-		border-radius: 5px;
-	}
+	// .selectedFlav {
+	// 	background-color: $cupcake-accent;
+	// 	border-radius: 5px;
+	// }
 	
-	.selectedFrost {
-		background-color: $cupcake-accent-2;
-		border-radius: 5px;
-	}
+	// .selectedFrost {
+	// 	background-color: $cupcake-accent-2;
+	// 	border-radius: 5px;
+	// }
 	
-	.selectedOtherCake {
-		background-color: $primary;
-		border-radius: 5px;
-	}
+	// .selectedOtherCake {
+	// 	background-color: $primary;
+	// 	border-radius: 5px;
+	// }
 	
-	.selectedSquare {
-		background-color: $square-accent;
-		border-radius: 5px;
-	}
+	// .selectedSquare {
+	// 	background-color: $square-accent;
+	// 	border-radius: 5px;
+	// }
 	
-	.selectedTart {
-		background-color: $tart-accent;
-		border-radius: 5px;
-	}
+	// .selectedTart {
+	// 	background-color: $tart-accent;
+	// 	border-radius: 5px;
+	// }
 	
-	.selectedOther {
-		background-color: $other-accent;
-		border-radius: 5px;
-	}
+	// .selectedOther {
+	// 	background-color: $other-accent;
+	// 	border-radius: 5px;
+	// }
 }
-
-
-
-
-
 	
 
 @media (max-width: 950px) {
