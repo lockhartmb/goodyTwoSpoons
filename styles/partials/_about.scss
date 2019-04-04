@@ -1,18 +1,17 @@
 .about {
+	text-align: center;
 	
-	.flexContainer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.wrapper {
+		width: 50%;
 	}
 
 	img {
-		width: 30%;
+		width: 40%;
 		border-radius: 50%;
+		margin: 0 auto;
 	}
 
-	p {
-		width: 50%;
+	p {	
 		padding: 20px 40px;
 	}
 	

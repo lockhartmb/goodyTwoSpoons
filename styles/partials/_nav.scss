@@ -2,13 +2,26 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: rgba($primary, 0.4);
+    background-color: rgba($primary, 0.7);
+    
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    img {
+        width: 90px;
+        margin: 10px 0;
+    }
 
     ul {
         display: flex;
         justify-content: space-around;
         margin: 0;
         padding: 10px 10px;
+        flex: 1;
     }
 
     li {
@@ -43,8 +56,8 @@ nav {
     }
 
     .submenu {
-        // display: none;
-        display: flex;
+        display: none;
+        // display: flex;
         position: absolute;
 
         li {
