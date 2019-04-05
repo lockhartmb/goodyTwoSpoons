@@ -22,7 +22,7 @@
 
 		<p class="hamburger"><i class="fas fa-bars"></i></p>
 
-		<nav class="menu">
+		<nav class="mainMenu">
 			<div class="wrapper">
 				<ul>
 					<li class="exit-responsive">
@@ -30,9 +30,6 @@
 					</li>
 					<li>
 						<a href="#home">Home</a>
-					</li>
-					<li>
-						<a href="#gallery">Gallery</a>
 					</li>
 					<li class="menuDropdown">
 						<a href="#menu">Menu</a>
@@ -50,6 +47,9 @@
 								<a href="">Wedding Cakes</a>
 							</li>
 						</ul>
+					</li>
+					<li>
+						<a href="#gallery">Gallery</a>
 					</li>
 					<li>
 						<a href="#prices">Prices</a>
@@ -70,13 +70,13 @@
 	</header>
 
 	<main>
-		<section class="gallery" id="gallery">
+		<section class="menu" id="menu">
 
 			<div class="wrapper">
-				<h2>Gallery</h2>
-				<div class="galleryContent">
+				<h2>Menu</h2>
+				<div class="menuContent">
 
-					<div class="galleryItem">
+					<div class="menuItem">
 						<div class="image">
 							<img src="assets/goodGalleryPictures/cupcakeExample.JPG"
 								alt="chocolate cupcakes for valentines day">
@@ -88,63 +88,27 @@
 						</div>
 					</div>
 
-					<div class="galleryItem">
+					<div class="menuItem">
 						<div class="image">
-							<img src="assets/goodGalleryPictures/dalaHorseCookies.png"
-								alt="Dala horse cookies">
+							<img src="assets/goodGalleryPictures/dalaHorseCookies.png" alt="Dala horse cookies">
 						</div>
 						<div class="label">
 							<h5>Sweets</h5>
 							<p>Cookies, tarts, and squares, perfect for entertaining.</p>
-							<a href="#prices">See details<i class="fas fa-chevron-right"></i></a>
+							<a href="#sweets">See details<i class="fas fa-chevron-right"></i></a>
 						</div>
 					</div>
 
-					<div class="galleryItem">
+					<div class="menuItem">
 						<div class="image">
-							<img src="assets/goodGalleryPictures/chocolateCake.jpeg"
-								alt="chocolate birthday cake">
+							<img src="assets/goodGalleryPictures/chocolateCake.jpeg" alt="chocolate birthday cake">
 						</div>
 						<div class="label">
 							<h5>Special Occasions</h5>
 							<p>Custom cake orders for weddings, birthdays, and showers.</p>
-							<a href="#prices">See details<i class="fas fa-chevron-right"></i></a>
+							<a href="#specialOccasions">See details<i class="fas fa-chevron-right"></i></a>
 						</div>
 					</div>
-
-
-					<!-- <div class="galleryItem">
-						<img src="assets/goodGalleryPictures/chocolateCake.jpeg"
-							alt="a delicious triple chocolate cake">
-					</div>
-					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/holidayPlatter.jpg" alt="holiday treat platter">
-					</div>
-					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/lemonCupcakes.JPG" alt="lemon and vanilla cupcakes">
-					</div>
-					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/redSwirlCupcakes.JPG"
-							alt="red and white swirl icing cupcakes">
-					</div>
-					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/valentinesCupcakes3.JPG"
-							alt="valentines heart shaped cupcakes">
-					</div>
-					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/crownCupcakes.JPG" alt="vanilla cupcakes decorated with crowns">
-					</div>
-					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/beachCupcakes.jpg"
-							alt="cupcakes decorated like the lakeshore">
-					</div>
-					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/carrotCupcakes.jpg"
-							alt="carrot cupcakes with cream cheese icing">
-					</div>
-					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/chocoalteHeartCupcakes.JPG" alt="chocolate heart cupcakes">
-					</div> -->
 				</div>
 
 				<div class="CTA">
@@ -153,17 +117,66 @@
 						<span>Follow us</span>
 					</a>
 				</div>
+
 			</div> <!-- end of .wrapper div -->
 
 			<section class="divider"></section>
 
 		</section> <!-- end of gallery section -->
 
-		<section class="menu" id="menu">
+		<section class="gallery" id="gallery">
 			<div class="wrapper">
-				<h2>Menu</h2>
+				<h2>Gallery</h2>
 
-				<div class="bakedGood">
+				<div class="galleryContent">
+
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/holidayPlatter.jpg" alt="assorted holiday sweets platter">
+					</div>
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/redSwirlCupcakes.JPG"
+							alt="cupcake decorated with white icing and red and silver sprinkles">
+					</div>
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/valentinesCupcakes3.JPG"
+							alt="sixteen assorted valentines cupcakes arranged 4 by 4">
+					</div>
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/crownCupcakes.JPG"
+							alt="vanilla cupcakes decorated with white chocolate crowns">
+					</div>
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/beachCupcakes.jpg"
+							alt="many cupcakes decorated like the Lake Superior shore">
+					</div>
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/carrotCupcakes.jpg"
+							alt="mini carrot cupcakes with cream cheese icing">
+					</div>
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/assortmentTrays.png"
+							alt="a box of assorted sweets available during the holidays">
+					</div>
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/valentinesCupcakes.JPG"
+							alt="heartshaped pink cupcakes for valentines day">
+					</div>
+
+					<div class="galleryItem">
+						<img src="assets/goodGalleryPictures/holidayAssortmentTray.jpg"
+							alt="a large assortment of squares, tarts, cookies, and fudge on a platter">
+					</div>
+
+				</div>
+				<!-- <div class="bakedGood">
 					<div class="bakedGoodHeader">
 						<div class="headerImage">
 							<img src="assets/goodGalleryPictures/chocolateCake.jpeg" alt="chocolate cake">
@@ -173,22 +186,11 @@
 					<div class="bakedGoodOptions">
 						<div class="special">
 							<h4>Cake Flavours:</h4>
-							<ul>
-								<li class="flavour">Chocolate</li>
-								<li class="flavour">Vanilla</li>
-								<li class="flavour">Carrot</li>
-								<li class="flavour">Banana</li>
-							</ul>
+							
 						</div>
 						<div class="special">
 							<h4>Frostings:</h4>
-							<ul>
-								<li class="frosting">Chocolate buttercream</li>
-								<li class="frosting">Vanilla buttercream</li>
-								<li class="frosting">Lemon buttercream</li>
-								<li class="frosting">Cream cheese buttercream</li>
-								<li class="frosting">Whipped chocolate ganache</li>
-							</ul>
+							
 						</div>
 						<div class="special">
 							<h4>Other:</h4>
@@ -267,74 +269,119 @@
 						<p>Wedding cakes are new to Goody Two Spoons and detailed discussions are required. Schedule a
 							consultation!</p>
 					</div>
-				</div>
+				</div> -->
 			</div> <!-- end of .wrapper div -->
 		</section>
 
 		<section class="prices" id="prices">
 			<div class="wrapper">
-				<h2>Prices</h2>
+				<h2>Price list</h2>
 				<p>The following menu prices are standard but special orders, decorations, and flavours can be
-					requested.
-					Pricing will
-					be adjusted according to special requests.
-					All baking is made to order. A 48 hour minimum is required.
+					requested. Pricing will be adjusted according to special requests. All baking is made to order and a
+					minimum of 48 hours notice is required.
 				</p>
 				<div class="priceContent">
 					<h3>Cupcakes</h3>
-					<ul>
+					<p>Cakes and cupcakes come in chocolate 🍫, vanilla 🍨, carrot 🥕, or banana 🍌.</p>
+					<p>Top them with
+						chocolate 🍫, vanilla 🍨, lemon 🍋, or cream cheese buttercream.</p>
+
+					<ul class="price">
 						<li>
 							<h4>Mini</h4>
-							<span class="spacer"></span>
 							<span class="price">$2.00</span>
 						</li>
 						<li>
 							<h4>Regular</h4>
-							<span class="spacer"></span>
 							<span class="price">$3.50</span>
 						</li>
-						<li>Minimum order is a half dozen of one flavour regular size and one dozen of one flavour mini
-							size.</li>
+						<li class="disclaimer">*Minimum order of one dozen of one flavour of minis and a half dozen of
+							one flavour of
+							regular size cupcakes.</li>
 					</ul>
+
 					<h3>Cakes</h3>
+					<p>Cakes are filled with buttercream. Fruit filling is extra depending on size of cake.</p>
+					<p>Specialty cakes are available including: chocolate bundt cake, rhubarb coffee cake (seasonal),
+						and New York style
+						cheesecake. </p>
+
 					<ul>
 						<li>
 							<h4>6" double - serves 6+</h4>
-							<span class="spacer"></span>
 							<span class="price">$25.00</span>
 						</li>
 						<li>
 							<h4>7" triple - serves 6+</h4>
-							<span class="spacer"></span>
 							<span class="price">$50.00</span>
 						</li>
 						<li>
 							<h4>8" triple - serves 12+</h4>
-							<span class="spacer"></span>
 							<span class="price">$60.00</span>
 						</li>
 						<li>
 							<h4>10" double - serves 12+</h4>
-							<span class="spacer"></span>
 							<span class="price">$70.00</span>
 						</li>
 						<li>
 							<h4>1/4 slab - serves 15+</h4>
-							<span class="spacer"></span>
 							<span class="price">$90.00</span>
 						</li>
 						<li>
 							<h4>1/2 slab - serves 35+</h4>
-							<span class="spacer"></span>
 							<span class="price">$120.00</span>
 						</li>
 					</ul>
-					<h3>Assortment Trays</h3>
-					<ul>
-						<li>
-							$20 per dozen pieces
-						</li>
-					</ul>
+					<h3>Sweets</h3>
+					<div class="sweets" id="sweets">
+
+						<div class="sweet">
+							<h4>Squares</h4>
+							<ul>
+								<li>Rickety Uncle</li>
+								<li>That Coffee Shop's Cranberry Christmas Bar</li>
+								<li>Two Ingredient Fudge (variations available)</li>
+								<li class="disclaimer">*Price to be determined upon order.</li>
+							</ul>
+						</div>
+
+						<div class="sweet">
+							<h4>Tarts</h4>
+
+							<ul>
+								<li>
+									<span class="price">$3.50 each</span>
+								</li>
+								<li>Cheesecake Tarts with Cherry Topping</li>
+								<li>Key Lime Tarts</li>
+								<li class="disclaimer">*Minimum order of one dozen tarts.</li>
+							</ul>
+						</div>
+
+						<div class="sweet">
+							<h4>Cookies</h4>
+							<ul>
+								<li>
+									<span class="price">$2.00 each</span>
+								</li>
+								<li>Sparkling Ginger Chip Cookies</li>
+								<li>Sugar Cookies</li>
+								<li class="disclaimer">*Minimum order of one dozen cookies.</li>
+							</ul>
+						</div>
+
+						<div class="sweet">
+							<h4>Other</h4>
+							<ul>
+								<li>Pavlova with fresh fruit and cream</li>
+							</ul>
+						</div>
+
+					</div>
+					<h3 id="specialOccasions">Special Occasions</h3>
+					<p>Wedding cakes are new to Goody Two Spoons and detailed discussions are required. Schedule a
+						consultation through the form below!</p>
+
 				</div>
 			</div> <!-- end of .wrapper div -->
 		</section>
@@ -346,7 +393,8 @@
 				<p>Hi! I'm Dawna. I started baking gluten-free many years ago, as close friends and family
 					members of mine were diagnosed with celiac disease and severe gluten allergies.</p>
 				<p>I love a baking or cooking challenge
-					and whatever I make has to taste good. Goody Two Spoons is all about celiac-safe, delicious, gluten-free
+					and whatever I make has to taste good. Goody Two Spoons is all about celiac-safe, delicious,
+					gluten-free
 					treats!</p>
 			</div> <!-- end of .wrapper div -->
 		</section>
@@ -408,37 +456,6 @@
 
 			$('.exit-responsive').on('click', function () {
 				$('.menu').toggleClass('show');
-			});
-
-			$('.flavour').on('click', function () {
-				$('.otherCake').removeClass('selectedOtherCake');
-				$('.flavour').removeClass('selectedFlav');
-				$(this).addClass('selectedFlav');
-			});
-
-			$('.frosting').on('click', function () {
-				$('.otherCake').removeClass('selectedOtherCake');
-				$('.frosting').removeClass('selectedFrost');
-				$(this).addClass('selectedFrost');
-			});
-
-			$('.otherCake').on('click', function () {
-				$('.flavour').removeClass('selectedFlav');
-				$('.frosting').removeClass('selectedFrost');
-				$('.otherCake').removeClass('selectedOtherCake');
-				$(this).addClass('selectedOtherCake');
-			});
-
-			$('.square').on('click', function () {
-				$(this).toggleClass('selectedSquare');
-			});
-
-			$('.tart').on('click', function () {
-				$(this).toggleClass('selectedTart');
-			});
-
-			$('.others').on('click', function () {
-				$(this).toggleClass('selectedOther');
 			});
 
 		});

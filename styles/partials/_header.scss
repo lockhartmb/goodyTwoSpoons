@@ -17,11 +17,12 @@ header {
 		font-family: $font-1;
 		font-size: 4rem;
 		color: $accent-4;
+		text-shadow: 2px 2px black;
 	}
-
+	
 	h2 {
 		font-size: 3rem;
 		padding: 0;
-		// color: $primary;
+		text-shadow: 2px 2px pink;
 	}
 }

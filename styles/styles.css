@@ -162,11 +162,8 @@ body {
   width: 80%;
   margin: 0 auto; }
 
-section {
-  padding: 50px 0; }
-
 main {
-  background-color: #f7efef; }
+  background-color: #fffef8; }
 
 img {
   width: 100%;
@@ -185,13 +182,7 @@ h2 {
   letter-spacing: 0px; }
 
 h3 {
-  border: 5px solid #656665;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 80%;
-  text-align: center;
-  margin: auto; }
+  font-size: 1.5rem; }
 
 h4 {
   font-size: 1.1rem;
@@ -231,10 +222,12 @@ header {
     text-transform: lowercase;
     font-family: "Parisienne", cursive;
     font-size: 4rem;
-    color: #FFCAD4; }
+    color: #FFCAD4;
+    text-shadow: 2px 2px black; }
   header h2 {
     font-size: 3rem;
-    padding: 0; }
+    padding: 0;
+    text-shadow: 2px 2px pink; }
 
 nav {
   position: fixed;
@@ -347,21 +340,39 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 40px 0; }
+  .galleryContent .galleryItem {
+    width: calc((100% / 3) - 40px);
+    margin: 20px; }
+
+.menu {
+  padding: 120px 0 0 0; }
+
+.menuContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 40px 0; }
-  .galleryContent .galleryItem {
+  .menuContent .menuItem {
     width: calc((100% / 3) - 30px);
     margin-right: 10px; }
-  .galleryContent .label {
+  .menuContent .label {
     text-align: center;
-    background-color: #f7efef;
+    background-color: #fffef8;
     display: inline-block;
     width: 100%;
     padding: 10px; }
-    .galleryContent .label a {
+    .menuContent .label a {
       text-decoration: none;
       color: inherit;
       font-size: 1rem;
@@ -369,13 +380,13 @@ nav {
       -webkit-transition: color 0.25s ease-in-out;
       -o-transition: color 0.25s ease-in-out;
       transition: color 0.25s ease-in-out; }
-    .galleryContent .label a:hover {
+    .menuContent .label a:hover {
       color: #82a5fd; }
-    .galleryContent .label a:hover i {
+    .menuContent .label a:hover i {
       -webkit-transform: translateX(3px);
       -ms-transform: translateX(3px);
       transform: translateX(3px); }
-    .galleryContent .label i {
+    .menuContent .label i {
       font-size: 0.7rem;
       padding-left: 5px;
       -webkit-transform: translateX(0);
@@ -414,116 +425,34 @@ nav {
   background-size: cover;
   height: 50vh; }
 
-.bakedGood {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  width: 100%; }
-  .bakedGood .bakedGoodHeader {
-    width: 30%;
-    margin-right: 30px; }
-    .bakedGood .bakedGoodHeader h3 {
-      margin: 20px auto; }
-  .bakedGood .bakedGoodOptions {
-    width: 65%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    background-color: #f7efef;
-    padding-left: 20px;
-    padding: 30px; }
-  .bakedGood .special {
-    width: 50%;
-    padding: 0 10px; }
-  .bakedGood .description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .bakedGood ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-  .bakedGood li {
-    padding: 5px 0;
-    margin: 3px 0;
-    line-height: 25px; }
-
-@media (max-width: 950px) {
-  .bakedgood {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .bakedgood .header {
-      width: 70%;
-      margin-right: 0; }
-    .bakedgood h2 {
-      margin-top: 20px; }
-    .bakedgood .right {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      width: 70%; }
-      .bakedgood .right .special {
-        width: 100%; }
-    .bakedgood p {
-      line-height: 25px;
-      text-align: center; } }
-
-@media (max-width: 450px) {
-  main .wrapper {
-    width: 90%; }
-  .bakedgood .header {
-    width: 85%; }
-  .bakedgood .right {
-    width: 85%; } }
-
 .prices {
-  text-align: center; }
+  padding: 120px 0;
+  text-align: center;
+  background-color: #fff3f5; }
   .prices h3 {
-    border: none; }
+    padding: 40px 0 20px 0; }
+  .prices p {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
   .prices ul {
     list-style: none;
     margin: 0;
-    padding: 0; }
-  .prices .priceContent ul {
-    padding-bottom: 50px; }
+    padding: 20px 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .prices .disclaimer {
+    font-size: 0.8rem;
+    width: 60%;
+    margin: 0 auto; }
   .prices .priceContent li {
     padding-bottom: 25px; }
 
 .about {
-  text-align: center; }
+  text-align: center;
+  padding: 120px 0; }
   .about .wrapper {
     width: 50%; }
   .about img {
@@ -590,7 +519,7 @@ footer {
       width: 48%;
       border: none;
       padding: 10px;
-      background-color: #f7efef; }
+      background-color: #fffef8; }
     footer .flexContainer input:first-of-type {
       margin-right: 20px; }
     footer .flexContainer input::-webkit-input-placeholder {
@@ -607,7 +536,7 @@ footer {
     padding: 10px;
     height: 150px;
     margin-bottom: 20px;
-    background-color: #f7efef; }
+    background-color: #fffef8; }
     footer textarea::-webkit-input-placeholder {
       color: #232323; }
     footer textarea:-ms-input-placeholder {
