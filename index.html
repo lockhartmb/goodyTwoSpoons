@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Parisienne" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
 		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -63,17 +64,17 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="wrapper">
+		<div data-aos="fade-up" data-aos-duration="2000" class="wrapper">
 			<h1>Goody Two Spoons</h1>
 			<h2>Gluten-free baking</h2>
 		</div>
 	</header>
 
 	<main>
-		<section class="menu" id="menu">
+		<section data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" class="menu" id="menu">
 
 			<div class="wrapper">
-				<h2>Menu</h2>
+				<h2 >Menu</h2>
 				<div class="menuContent">
 
 					<div class="menuItem">
@@ -124,7 +125,7 @@
 
 		</section> <!-- end of gallery section -->
 
-		<section class="gallery" id="gallery">
+		<section data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" class="gallery" id="gallery">
 			<div class="wrapper">
 				<h2>Gallery</h2>
 
@@ -273,7 +274,7 @@
 			</div> <!-- end of .wrapper div -->
 		</section>
 
-		<section class="prices" id="prices">
+		<section data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" class="prices" id="prices">
 			<div class="wrapper">
 				<h2>Price list</h2>
 				<p>The following menu prices are standard but special orders, decorations, and flavours can be
@@ -386,7 +387,7 @@
 			</div> <!-- end of .wrapper div -->
 		</section>
 
-		<section class="about" id="about">
+		<section data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" class="about" id="about">
 			<div class="wrapper">
 				<h2>About</h2>
 				<img src="assets/bitmoji2.jpg" alt="mom's bitmoji">
@@ -402,7 +403,7 @@
 		</div>
 	</main>
 
-	<footer id="contact">
+	<footer data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" id="contact">
 
 		<div class="wrapper">
 			<h2>Get in touch</h2>
@@ -438,12 +439,12 @@
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
 
 	<script>
-		$(function () {
+		$(document).ready(function () {
 
 			$('a').smoothScroll({
 				offset: 10,
@@ -458,6 +459,7 @@
 				$('.menu').toggleClass('show');
 			});
 
+			AOS.init();
 		});
 	</script>
 </body>
