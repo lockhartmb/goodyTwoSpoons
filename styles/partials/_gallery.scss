@@ -9,139 +9,24 @@
 	margin: 40px 0;
 
 	.galleryItem {
-		width: calc((100% / 3) - 40px);
-		margin: 20px;
+		width: calc((100% / 3) - 60px);
+		margin-right: 20px;
+		margin-bottom: 20px;
 	}
 }
 
+@media (max-width: 900px) {
+	.galleryContent {
+		.galleryItem {
+			width: calc((100% / 2) - 40px);
+		}
+	}
+}
 
-// .bakedGood {
-// 	display: flex;
-// 	flex-direction: row;
-// 	justify-content: space-between;
-// 	margin-bottom: 30px;
-// 	width: 100%;
-
-// 	.bakedGoodHeader {
-// 		width: 30%;
-// 		margin-right: 30px;
-
-// 		h3 {
-// 			margin: 20px auto;
-// 		}
-// 	}
-
-// 	.bakedGoodOptions {
-// 		width: 65%;
-// 		display: flex;
-// 		flex-direction: row;
-// 		justify-content: space-between;
-// 		flex-wrap: wrap;
-// 		background-color: $background-color;
-// 		padding-left: 20px;
-// 		padding: 30px;
-// 	}
-
-// 	.special {
-// 		width: 50%;
-// 		padding: 0 10px;
-// 	}
-
-// 	.description {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: center;
-// 		align-items: center;
-// 	}
-
-// 	ul {
-// 		list-style: none;
-// 		padding: 0;
-// 		margin: 0;
-// 	}
-
-// 	li {
-// 		padding: 5px 0;
-// 		margin: 3px 0;
-// 		line-height: 25px;
-// 	}
-	
-// 	// .selectedFlav {
-// 	// 	background-color: $cupcake-accent;
-// 	// 	border-radius: 5px;
-// 	// }
-	
-// 	// .selectedFrost {
-// 	// 	background-color: $cupcake-accent-2;
-// 	// 	border-radius: 5px;
-// 	// }
-	
-// 	// .selectedOtherCake {
-// 	// 	background-color: $primary;
-// 	// 	border-radius: 5px;
-// 	// }
-	
-// 	// .selectedSquare {
-// 	// 	background-color: $square-accent;
-// 	// 	border-radius: 5px;
-// 	// }
-	
-// 	// .selectedTart {
-// 	// 	background-color: $tart-accent;
-// 	// 	border-radius: 5px;
-// 	// }
-	
-// 	// .selectedOther {
-// 	// 	background-color: $other-accent;
-// 	// 	border-radius: 5px;
-// 	// }
-// }
-	
-
-// @media (max-width: 950px) {
-	
-// 	.bakedgood {
-// 		flex-direction: column;
-// 		align-items: center;
-		
-// 		.header {
-// 			width: 70%;
-// 			margin-right: 0;
-// 		}
-		
-// 		h2 {
-// 			margin-top: 20px;
-// 		}
-
-// 		.right {
-// 			flex-direction: column;
-// 			width: 70%;
-
-// 			.special {
-// 				width: 100%;
-// 			}
-// 		}
-
-// 		p {
-// 			line-height: 25px;
-//     		text-align: center;
-// 		}
-// 	}
-// }
-
-// @media (max-width: 450px) {
-// 	main .wrapper {
-// 		width: 90%;
-// 	}
-
-// 	.bakedgood {
-
-// 		.header {
-// 			width: 85%;
-// 		}
-
-// 		.right {
-// 			width: 85%;
-// 		}
-// 	}
-// }
+@media (max-width: 550px) {
+	.galleryContent {
+		.galleryItem {
+			width: calc(100% - 20px);
+		}
+	}
+}
