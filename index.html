@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Goody Two Spoons</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
@@ -29,22 +31,22 @@
 					<li class="exitResponsive">
 						<i class="fas fa-times"></i>
 					</li>
-					<li>
+					<li class="mainMenuItem">
 						<a href="#home">Home</a>
 					</li>
-					<li>
+					<li class="mainMenuItem">
 						<a href="#menu">Menu</a>
 					</li>
-					<li>
+					<li class="mainMenuItem">
 						<a href="#gallery">Gallery</a>
 					</li>
-					<li>
+					<li class="mainMenuItem">
 						<a href="#prices">Prices</a>
 					</li>
-					<li>
+					<li class="mainMenuItem">
 						<a href="#about">About</a>
 					</li>
-					<li>
+					<li class="mainMenuItem">
 						<a href="#contact">Contact</a>
 					</li>
 				</ul>
@@ -133,7 +135,7 @@
 					</div>
 
 					<div class="galleryItem">
-						<img src="assets/goodGalleryPictures/crownCupcakes.JPG"
+						<img src="assets/goodGalleryPictures/crownCupcakes.jpg"
 							alt="vanilla cupcakes decorated with white chocolate crowns">
 					</div>
 
@@ -360,6 +362,10 @@
 			$('.exitResponsive').on('click', function () {
 				$('.mainMenu').toggleClass('show');
 			});
+
+			$('.mainMenuItem').on('click', function () {
+				$('.mainMenu').removeClass('show');
+			})
 
 			AOS.init();
 		});
