@@ -66,21 +66,25 @@ nav {
 }
 
 .hamburger,
-.exit-responsive {
+.exitResponsive {
     display: none;
 }
 
-.show.menu {
+.show {
     display: block;
 }
 
 @media (max-width: 750px) {
     .hamburger,
-    .exit-responsive {
+    .exitResponsive {
         display: block;
         font-size: 1.7rem;
         margin: 0;
         padding: 20px 0;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .hamburger {
@@ -91,7 +95,7 @@ nav {
     nav {
         display: none;
         position: fixed;
-        background-color: rgba($primary, 0.5);
+        background-color: rgba($primary, 0.7);
         width: 100%;
         height: 100vh;
         text-align: right;
