@@ -7,10 +7,10 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 40px 0;
+	justify-content: space-between;
 
 	.galleryItem {
-		width: calc((100% / 3) - 60px);
-		margin-right: 20px;
+		width: 32%;
 		margin-bottom: 20px;
 	}
 }
@@ -18,7 +18,7 @@
 @media (max-width: 900px) {
 	.galleryContent {
 		.galleryItem {
-			width: calc((100% / 2) - 40px);
+			width: 48%;
 		}
 	}
 }
@@ -26,7 +26,7 @@
 @media (max-width: 550px) {
 	.galleryContent {
 		.galleryItem {
-			width: calc(100% - 20px);
+			width: 100%;
 		}
 	}
 }

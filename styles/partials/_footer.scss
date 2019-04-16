@@ -14,6 +14,7 @@ footer {
 	a {
 		color: inherit;
 		transition: color $transition;
+		font-size: 1.1rem;
 
 		&:hover {
 			color: $accent-4;
@@ -21,7 +22,7 @@ footer {
 	}
 
 	form {
-		width: 800px;
+		max-width: 800px;
 		margin: 20px auto;
 		font-size: 1rem;
 	}
@@ -38,13 +39,13 @@ footer {
 			padding: 10px;
 			background-color: $background-color;
 		}
-		
+
 		input:first-of-type {
 			margin-right: 20px;
 		}
 
 		input::placeholder {
-			color: $font-color;
+			color: lighten($font-color, 50%);
 		}
 	}
 
@@ -57,28 +58,47 @@ footer {
 		background-color: $background-color;
 
 		&::placeholder {
-			color: $font-color;
+			color: lighten($font-color, 50%);
 		}
 	}
 
 	button {
-		max-width: 500px;
-		width: 30%;
+		max-width: 400px;
+		width: 100%;
 		padding: 10px;
 		border: $border;
 		background-color: $accent-4;
 		transition: background-color $transition;
-		
+
 		&:hover {
 			background-color: darken($accent-4, 10%);
 		}
 	}
 
-	input:focus, textarea:focus {
+	input:focus,
+	textarea:focus {
 		outline: 2px solid $accent-4;
 	}
 
 	button:focus {
 		outline: 2px solid $font-color;
+	}
+}
+
+@media (max-width: 585px) {
+	footer {
+		.flexContainer {
+			flex-direction: column;
+			margin-bottom: 0;
+
+			input {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+
+			input:first-of-type {
+				margin-right: 0;
+			}
+		}
 	}
 }
