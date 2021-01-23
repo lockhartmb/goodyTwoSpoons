@@ -1,516 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Goody Two Spoons</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicons/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cabin|Parisienne"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
 
-  <body>
-    <header id="home">
-      <p class="hamburger"><i class="fas fa-bars"></i></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Goody Two Spoons</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="assets/favicons/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Parisienne" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
 
-      <nav class="mainMenu">
-        <div class="wrapper">
-          <ul>
-            <li class="exitResponsive">
-              <i class="fas fa-times"></i>
+<body>
+  <header id="home">
+    <p class="hamburger"><i class="fas fa-bars"></i></p>
+
+    <nav class="mainMenu">
+      <div class="wrapper">
+        <ul>
+          <li class="exitResponsive">
+            <i class="fas fa-times"></i>
+          </li>
+          <li class="mainMenuItem">
+            <a href="#home">Home</a>
+          </li>
+          <li class="mainMenuItem">
+            <a href="#menu">Menu</a>
+          </li>
+          <li class="mainMenuItem">
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li class="mainMenuItem">
+            <a href="#prices">Prices</a>
+          </li>
+          <li class="mainMenuItem">
+            <a href="#about">About</a>
+          </li>
+          <li class="mainMenuItem">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div data-aos="fade-up" data-aos-duration="2000" class="wrapper">
+      <h1>Goody Two Spoons</h1>
+      <h2>Gluten-free baking</h2>
+    </div>
+  </header>
+
+  <main>
+    <section data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" class="menu" id="menu">
+      <div class="wrapper">
+        <h2>Menu</h2>
+        <div class="menuContent">
+          <div class="menuItem">
+            <div class="image">
+              <img src="assets/goodGalleryPictures/cupcakeExample.JPG" alt="chocolate cupcakes for valentines day" />
+            </div>
+            <div class="label">
+              <h5>Cupcakes</h5>
+              <p>Cupcakes come in a variety of flavours and sizes.</p>
+              <a href="#prices">See details<i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <div class="menuItem">
+            <div class="image">
+              <img src="assets/goodGalleryPictures/dalaHorseCookies.png" alt="Dala horse cookies" />
+            </div>
+            <div class="label">
+              <h5>Pies and Tarts</h5>
+              <p>Perfect for entertaining.</p>
+              <a href="#sweets">See details<i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <div class="menuItem">
+            <div class="image">
+              <img src="assets/goodGalleryPictures/chocolateCake.jpeg" alt="chocolate birthday cake" />
+            </div>
+            <div class="label">
+              <h5>Holidays and Special Occasions</h5>
+              <p>Christmas goodies and custom cake orders.</p>
+              <a href="#specialOccasions">See details<i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="CTA">
+          <a target="_blank" href="https://www.instagram.com/goodytwospoons/">
+            <i class="fab fa-instagram"></i>
+            <span>Follow us</span>
+          </a>
+        </div>
+      </div>
+      <!-- end of .wrapper div -->
+
+      <section class="divider"></section>
+    </section>
+    <!-- end of gallery section -->
+
+    <section data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" class="gallery" id="gallery">
+      <div class="wrapper">
+        <h2>Gallery</h2>
+
+        <div class="galleryContent">
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/holidayPlatter.jpg" alt="assorted holiday sweets platter" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/redSwirlCupcakes.JPG"
+              alt="cupcake decorated with white icing and red and silver sprinkles" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/valentinesCupcakes3.JPG"
+              alt="sixteen assorted valentines cupcakes arranged 4 by 4" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/crownCupcakes.jpg"
+              alt="vanilla cupcakes decorated with white chocolate crowns" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/beachCupcakes.jpg"
+              alt="many cupcakes decorated like the Lake Superior shore" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/carrotCupcakes.jpg"
+              alt="mini carrot cupcakes with cream cheese icing" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/assortmentTrays.png"
+              alt="a box of assorted sweets available during the holidays" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/valentinesCupcakes.JPG"
+              alt="heartshaped pink cupcakes for valentines day" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/holidayAssortmentTray.jpg"
+              alt="a large assortment of squares, tarts, cookies, and fudge on a platter" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/birthday.JPG" alt="chocolate 50th birthday cake" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/sleepingGiant.JPG"
+              alt="wedding cake with Sleeping Giant painted on side" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/halloween.JPG"
+              alt="halloween themed cupcakes, two decorated like cats, two as pumpkins" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/wedding.JPG"
+              alt="wedding cake with on pedestal surrounded by cupcakes and candles" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/wedding2.JPG" alt="wedding cupcakes and candles" />
+          </div>
+
+          <div class="galleryItem">
+            <img src="assets/goodGalleryPictures/wedding3.JPG"
+              alt="wedding cake on pedestal with flowers flowing down the side" />
+          </div>
+        </div>
+      </div>
+      <!-- end of .wrapper div -->
+    </section>
+
+    <section data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" class="prices" id="prices">
+      <div class="wrapper">
+        <h2>Price list</h2>
+        <p>
+          The following menu prices are guidelines. Pricing will be adjusted
+          according to special requests. All baking is made to order and a
+          minimum of 48 hours notice is required.
+        </p>
+        <div class="priceContent">
+          <h3>Cupcakes</h3>
+          <p>
+            Cakes and cupcakes come in chocolate 🍫, vanilla 🍨, carrot 🥕, or
+            banana 🍌.
+          </p>
+          <p>
+            Top them with chocolate 🍫, vanilla 🍨, lemon 🍋, or cream cheese
+            buttercream.
+          </p>
+
+          <ul class="price">
+            <li>
+              <h4>Mini</h4>
+              <span class="price">$2.25</span>
             </li>
-            <li class="mainMenuItem">
-              <a href="#home">Home</a>
+            <li>
+              <h4>Regular</h4>
+              <span class="price">$4.00</span>
             </li>
-            <li class="mainMenuItem">
-              <a href="#menu">Menu</a>
-            </li>
-            <li class="mainMenuItem">
-              <a href="#gallery">Gallery</a>
-            </li>
-            <li class="mainMenuItem">
-              <a href="#prices">Prices</a>
-            </li>
-            <li class="mainMenuItem">
-              <a href="#about">About</a>
-            </li>
-            <li class="mainMenuItem">
-              <a href="#contact">Contact</a>
+            <li class="disclaimer">
+              *Minimum order of two dozen of one flavour of minis and one
+              dozen of one flavour of regular size cupcakes.
             </li>
           </ul>
-        </div>
-      </nav>
-      <div data-aos="fade-up" data-aos-duration="2000" class="wrapper">
-        <h1>Goody Two Spoons</h1>
-        <h2>Gluten-free baking</h2>
-      </div>
-    </header>
 
-    <main>
-      <section
-        data-aos="fade-up"
-        data-aos-offset="350"
-        data-aos-duration="2000"
-        class="menu"
-        id="menu"
-      >
-        <div class="wrapper">
-          <h2>Menu</h2>
-          <div class="menuContent">
-            <div class="menuItem">
-              <div class="image">
-                <img
-                  src="assets/goodGalleryPictures/cupcakeExample.JPG"
-                  alt="chocolate cupcakes for valentines day"
-                />
-              </div>
-              <div class="label">
-                <h5>Cupcakes</h5>
-                <p>Cupcakes come in a variety of flavours and sizes.</p>
-                <a href="#prices"
-                  >See details<i class="fas fa-chevron-right"></i
-                ></a>
-              </div>
-            </div>
-
-            <div class="menuItem">
-              <div class="image">
-                <img
-                  src="assets/goodGalleryPictures/dalaHorseCookies.png"
-                  alt="Dala horse cookies"
-                />
-              </div>
-              <div class="label">
-                <h5>Pies and Tarts</h5>
-                <p>Perfect for entertaining.</p>
-                <a href="#sweets"
-                  >See details<i class="fas fa-chevron-right"></i
-                ></a>
-              </div>
-            </div>
-
-            <div class="menuItem">
-              <div class="image">
-                <img
-                  src="assets/goodGalleryPictures/chocolateCake.jpeg"
-                  alt="chocolate birthday cake"
-                />
-              </div>
-              <div class="label">
-                <h5>Holidays and Special Occasions</h5>
-                <p>Christmas goodies and custom cake orders.</p>
-                <a href="#specialOccasions"
-                  >See details<i class="fas fa-chevron-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="CTA">
-            <a target="_blank" href="https://www.instagram.com/goodytwospoons/">
-              <i class="fab fa-instagram"></i>
-              <span>Follow us</span>
-            </a>
-          </div>
-        </div>
-        <!-- end of .wrapper div -->
-
-        <section class="divider"></section>
-      </section>
-      <!-- end of gallery section -->
-
-      <section
-        data-aos="fade-up"
-        data-aos-offset="350"
-        data-aos-duration="2000"
-        class="gallery"
-        id="gallery"
-      >
-        <div class="wrapper">
-          <h2>Gallery</h2>
-
-          <div class="galleryContent">
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/holidayPlatter.jpg"
-                alt="assorted holiday sweets platter"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/redSwirlCupcakes.JPG"
-                alt="cupcake decorated with white icing and red and silver sprinkles"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/valentinesCupcakes3.JPG"
-                alt="sixteen assorted valentines cupcakes arranged 4 by 4"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/crownCupcakes.jpg"
-                alt="vanilla cupcakes decorated with white chocolate crowns"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/beachCupcakes.jpg"
-                alt="many cupcakes decorated like the Lake Superior shore"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/carrotCupcakes.jpg"
-                alt="mini carrot cupcakes with cream cheese icing"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/assortmentTrays.png"
-                alt="a box of assorted sweets available during the holidays"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/valentinesCupcakes.JPG"
-                alt="heartshaped pink cupcakes for valentines day"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/holidayAssortmentTray.jpg"
-                alt="a large assortment of squares, tarts, cookies, and fudge on a platter"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/birthday.JPG"
-                alt="chocolate 50th birthday cake"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/sleepingGiant.JPG"
-                alt="wedding cake with Sleeping Giant painted on side"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/halloween.JPG"
-                alt="halloween themed cupcakes, two decorated like cats, two as pumpkins"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/wedding.JPG"
-                alt="wedding cake with on pedestal surrounded by cupcakes and candles"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/wedding2.JPG"
-                alt="wedding cupcakes and candles"
-              />
-            </div>
-
-            <div class="galleryItem">
-              <img
-                src="assets/goodGalleryPictures/wedding3.JPG"
-                alt="wedding cake on pedestal with flowers flowing down the side"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- end of .wrapper div -->
-      </section>
-
-      <section
-        data-aos="fade-up"
-        data-aos-offset="350"
-        data-aos-duration="2000"
-        class="prices"
-        id="prices"
-      >
-        <div class="wrapper">
-          <h2>Price list</h2>
+          <h3>Cakes</h3>
           <p>
-            The following menu prices are guidelines. Pricing will be adjusted
-            according to special requests. All baking is made to order and a
-            minimum of 48 hours notice is required.
+            Cakes are filled with buttercream. Fruit filling is extra
+            depending on size of cake.
           </p>
-          <div class="priceContent">
-            <h3>Cupcakes</h3>
-            <p>
-              Cakes and cupcakes come in chocolate 🍫, vanilla 🍨, carrot 🥕, or
-              banana 🍌.
-            </p>
-            <p>
-              Top them with chocolate 🍫, vanilla 🍨, lemon 🍋, or cream cheese
-              buttercream.
-            </p>
 
-            <ul class="price">
-              <li>
-                <h4>Mini</h4>
-                <span class="price">$2.25</span>
-              </li>
-              <li>
-                <h4>Regular</h4>
-                <span class="price">$4.00</span>
-              </li>
-              <li class="disclaimer">
-                *Minimum order of two dozen of one flavour of minis and one
-                dozen of one flavour of regular size cupcakes.
-              </li>
-            </ul>
+          <ul>
+            <li>
+              <h4>6" double - serves 6+</h4>
+              <span class="price">$30.00</span>
+            </li>
+            <li>
+              <h4>6" triple - serves 6-8</h4>
+              <span class="price">$40.00</span>
+            </li>
+            <li>
+              <h4>8" triple - serves 12+</h4>
+              <span class="price">$60.00</span>
+            </li>
+            <li>
+              <h4>9" triple - serves 12+</h4>
+              <span class="price">$70.00</span>
+            </li>
+            <li>
+              <h4>10" double - serves 12+</h4>
+              <span class="price">$85.00</span>
+            </li>
+            <li>
+              <h4>10" triple - serves 20-25</h4>
+              <span class="price">$95.00</span>
+            </li>
+            <li>
+              <h4>1/4 slab (9"x13") - serves 15+</h4>
+              <span class="price">$105.00</span>
+            </li>
+            <li>
+              <h4>1/2 slab - serves 35+</h4>
+              <span class="price">$120.00</span>
+            </li>
+          </ul>
 
-            <h3>Cakes</h3>
-            <p>
-              Cakes are filled with buttercream. Fruit filling is extra
-              depending on size of cake.
-            </p>
+          <h3>Pies</h3>
+          <ul>
+            <li>
+              <span class="price">$30.00 plus a $10 deposit for the glass pie dish</span>
+            </li>
+            <li>Inquire for flavours</li>
+          </ul>
 
-            <ul>
-              <li>
-                <h4>6" double - serves 6+</h4>
-                <span class="price">$30.00</span>
-              </li>
-              <li>
-                <h4>6" triple - serves 6-8</h4>
-                <span class="price">$40.00</span>
-              </li>
-              <li>
-                <h4>8" triple - serves 12+</h4>
-                <span class="price">$60.00</span>
-              </li>
-              <li>
-                <h4>9" triple - serves 12+</h4>
-                <span class="price">$70.00</span>
-              </li>
-              <li>
-                <h4>10" double - serves 12+</h4>
-                <span class="price">$85.00</span>
-              </li>
-              <li>
-                <h4>10" triple - serves 20-25</h4>
-                <span class="price">$95.00</span>
-              </li>
-              <li>
-                <h4>1/4 slab (9"x13") - serves 15+</h4>
-                <span class="price">$105.00</span>
-              </li>
-              <li>
-                <h4>1/2 slab - serves 35+</h4>
-                <span class="price">$120.00</span>
-              </li>
-            </ul>
+          <h3>Tarts</h3>
+          <ul>
+            <li>
+              <span class="price">$4.00 each</span>
+            </li>
+            <li>Cheesecake Tarts with Cherry Topping</li>
+            <li>Key Lime Tarts</li>
+            <li class="disclaimer">*Minimum order of one dozen tarts.</li>
+          </ul>
 
-            <h3>Pies</h3>
-            <ul>
-              <li>
-                <span class="price"
-                  >$30.00 plus a $10 deposit for the glass pie dish</span
-                >
-              </li>
-              <li>Inquire for flavours</li>
-            </ul>
-            
-            <h3>Tarts</h3>
-            <ul>
-              <li>
-                <span class="price">$4.00 each</span>
-              </li>
-              <li>Cheesecake Tarts with Cherry Topping</li>
-              <li>Key Lime Tarts</li>
-              <li class="disclaimer">*Minimum order of one dozen tarts.</li>
-            </ul>
 
-            
-            <h3 id="specialOccasions">Holidays and Special Occasions</h3>
-            <ul>
-              <li>
-                <span class="price">Christmas goodies - $20.00 for 12 pieces</span>
-              </li>
-              <li>
-                <p>Wedding cakes are new to Goody Two Spoons and detailed discussions
+          <h3 id="specialOccasions">Holidays and Special Occasions</h3>
+          <ul>
+            <li>
+              <span class="price">Christmas goodies - $20.00 for 12 pieces</span>
+            </li>
+            <li>
+              <p>Wedding cakes are new to Goody Two Spoons and detailed discussions
                 are required. Schedule a consultation through the form below!</p>
-              </li>
-            </ul>
-            
-          </div>
+            </li>
+          </ul>
+
         </div>
-        <!-- end of .wrapper div -->
-      </section>
-
-      <section
-        data-aos="fade-up"
-        data-aos-offset="350"
-        data-aos-duration="2000"
-        class="about"
-        id="about"
-      >
-        <div class="wrapper">
-          <h2>About</h2>
-          <img src="assets/bitmoji2.jpg" alt="mom's bitmoji" />
-          <p>
-            Hi! I'm Dawna. I started baking gluten-free many years ago, as close
-            friends and family members of mine were diagnosed with celiac
-            disease and severe gluten allergies.
-          </p>
-          <p>
-            I love a baking or cooking challenge and whatever I make has to
-            taste good. Goody Two Spoons is all about celiac-safe, delicious,
-            gluten-free treats!
-          </p>
-        </div>
-        <!-- end of .wrapper div -->
-      </section>
-    </main>
-
-    <footer
-      data-aos="fade-up"
-      data-aos-offset="350"
-      data-aos-duration="2000"
-      id="contact"
-    >
-      <div class="wrapper">
-        <h2>Get in touch</h2>
-
-        <p>
-          You can reach me at
-          <a href="mailto: goodytwospoons@gmail.com"
-            >goodytwospoons@gmail.com</a
-          >
-          or through the form below!
-        </p>
-
-        <form
-          action="https://formspree.io/goodytwospoons@gmail.com"
-          method="POST"
-        >
-          <div class="flexContainer">
-            <label for="name" class="visuallyHidden">Enter your name</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              class="name"
-              id="name"
-              required
-            />
-
-            <label for="email" class="visuallyHidden">Enter your email</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              class="email"
-              id="email"
-              required
-            />
-          </div>
-
-          <label for="message" class="visuallyHidden"
-            >Write your message here</label
-          >
-          <textarea
-            name="message"
-            id="message"
-            cols=""
-            rows=""
-            placeholder="Message"
-            required
-          ></textarea>
-
-          <button>
-            <i class="fas fa-paper-plane"></i>
-            Send message
-          </button>
-        </form>
-
-        <p><i class="fas fa-phone"></i> (807) 629-8162</p>
-        <p><i class="far fa-map"></i> 805 Hodder Ave.</p>
-        <a
-          style="margin-bottom: 20px; display: inline-block; font-size: 1.2rem"
-          target="_blank"
-          href="https://www.instagram.com/goodytwospoons/"
-          ><i class="fab fa-instagram"></i> goodytwospoons</a
-        >
-
-        <p>Made with 💕 in Thunder Bay, Ontario.</p>
       </div>
-    </footer>
+      <!-- end of .wrapper div -->
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    <section data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" class="about" id="about">
+      <div class="wrapper">
+        <h2>About</h2>
+        <img src="assets/bitmoji2.jpg" alt="mom's bitmoji" />
+        <p>
+          Hi! I'm Dawna. I started baking gluten-free many years ago, as close
+          friends and family members of mine were diagnosed with celiac
+          disease and severe gluten allergies.
+        </p>
+        <p>
+          I love a baking or cooking challenge and whatever I make has to
+          taste good. Goody Two Spoons is all about celiac-safe, delicious,
+          gluten-free treats!
+        </p>
+      </div>
+      <!-- end of .wrapper div -->
+    </section>
+  </main>
 
-    <script>
-      $(document).ready(function() {
-        $("a").smoothScroll({
-          offset: -50,
-          speed: 1400
-        });
+  <footer data-aos="fade-up" data-aos-offset="350" data-aos-duration="2000" id="contact">
+    <div class="wrapper">
+      <h2>Get in touch</h2>
 
-        $(".hamburger").on("click", function() {
-          $(".mainMenu").toggleClass("show");
-        });
+      <p>
+        You can reach me at
+        <a href="mailto: goodytwospoons@gmail.com">goodytwospoons@gmail.com</a>
+        or through the form below!
+      </p>
 
-        $(".exitResponsive").on("click", function() {
-          $(".mainMenu").toggleClass("show");
-        });
+      <form action="https://formspree.io/goodytwospoons@gmail.com" method="POST">
+        <div class="flexContainer">
+          <label for="name" class="visuallyHidden">Enter your name</label>
+          <input type="text" name="name" placeholder="Name" class="name" id="name" required />
 
-        $(".mainMenuItem").on("click", function() {
-          $(".mainMenu").removeClass("show");
-        });
+          <label for="email" class="visuallyHidden">Enter your email</label>
+          <input type="email" name="email" placeholder="Email" class="email" id="email" required />
+        </div>
 
-        AOS.init();
+        <label for="message" class="visuallyHidden">Write your message here</label>
+        <textarea name="message" id="message" cols="" rows="" placeholder="Message" required></textarea>
+
+        <button>
+          <i class="fas fa-paper-plane"></i>
+          Send me a message
+        </button>
+      </form>
+
+      <p><i class="fas fa-phone"></i> (807) 629-8162</p>
+      <p><i class="far fa-map"></i> 805 Hodder Ave.</p>
+      <a style="margin-bottom: 20px; display: inline-block; font-size: 1.2rem" target="_blank"
+        href="https://www.instagram.com/goodytwospoons/"><i class="fab fa-instagram"></i> goodytwospoons</a>
+
+      <p>Made with 💕 in Thunder Bay, Ontario.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("a").smoothScroll({
+        offset: -50,
+        speed: 1400
       });
-    </script>
-  </body>
+
+      $(".hamburger").on("click", function () {
+        $(".mainMenu").toggleClass("show");
+      });
+
+      $(".exitResponsive").on("click", function () {
+        $(".mainMenu").toggleClass("show");
+      });
+
+      $(".mainMenuItem").on("click", function () {
+        $(".mainMenu").removeClass("show");
+      });
+
+      AOS.init();
+    });
+  </script>
+</body>
+
 </html>
