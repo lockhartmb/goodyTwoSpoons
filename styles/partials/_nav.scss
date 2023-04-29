@@ -1,119 +1,119 @@
 nav {
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    background-color: rgba($primary, 0.7);
-    
-    .wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
-    img {
-        width: 90px;
-        margin: 10px 0;
-    }
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba($primary, 0.7);
 
-    ul {
-        display: flex;
-        justify-content: space-around;
-        margin: 0;
-        padding: 10px 10px;
-        flex: 1;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  img {
+    width: 90px;
+    margin: 10px 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 10px 10px;
+    flex: 1;
+  }
+
+  li {
+    list-style: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    position: relative;
+
+    a {
+      font-family: $font-2;
+      color: $font-color;
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px 0;
     }
+  }
+
+  li::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background-color: $accent-4;
+    transition: width $transition;
+  }
+
+  li:hover::after {
+    width: 40px;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
 
     li {
-        list-style: none;
-        padding: 15px 0;
-        border-radius: 10px;
-        position: relative;
-
-        a {
-            font-family: $font-2;
-            color: $font-color;
-            font-size: 1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 10px 0;
-        }
+      padding: 0 20px;
     }
-
-    li::after {
-        content: '';
-        position: absolute;
-        bottom: 5px;
-        right: 0;
-        width: 0;
-        height: 4px;
-        background-color: $accent-4;
-        transition: width $transition;
-    }
-
-    li:hover::after {
-        width: 40px;
-    }
-
-    .submenu {
-        display: none;
-        position: absolute;
-
-        li {
-            padding: 0 20px;
-        }
-    }
+  }
 }
 
 .hamburger,
 .exitResponsive {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 @media (max-width: 750px) {
-    .hamburger,
-    .exitResponsive {
-        display: block;
-        font-size: 1.7rem;
-        margin: 0;
-        padding: 20px 0;
+  .hamburger,
+  .exitResponsive {
+    display: block;
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 20px 0;
 
-        &:hover {
-            cursor: pointer;
-        }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .hamburger {
+    position: fixed;
+    padding-left: 20px;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    background-color: rgba($primary, 0.7);
+    width: 100%;
+    height: 100vh;
+    text-align: right;
+
+    ul {
+      display: flex;
+      flex-direction: column;
     }
 
-    .hamburger {
-        position: fixed;
-        padding-left: 20px;
+    i {
+      color: $font-color;
+      width: 100%;
     }
 
-    nav {
-        display: none;
-        position: fixed;
-        background-color: rgba($primary, 0.7);
-        width: 100%;
-        height: 100vh;
-        text-align: right;
-        
-        ul {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        i {
-            color: $font-color;
-            width: 100%;
-        }
-
-        a {
-            font-size: 1.8rem;
-            width: 25%;
-            padding: 20px;
-        }
+    a {
+      font-size: 1.8rem;
+      width: 25%;
+      padding: 20px;
     }
+  }
 }

@@ -1,32 +1,32 @@
 .gallery {
-	padding: 120px 0;
+  padding: 120px 0;
 }
 
 .galleryContent {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 40px 0;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  justify-content: space-between;
 
-	.galleryItem {
-		width: 32%;
-		margin-bottom: 20px;
-	}
+  .galleryItem {
+    width: 32%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 900px) {
-	.galleryContent {
-		.galleryItem {
-			width: 48%;
-		}
-	}
+  .galleryContent {
+    .galleryItem {
+      width: 48%;
+    }
+  }
 }
 
 @media (max-width: 550px) {
-	.galleryContent {
-		.galleryItem {
-			width: 100%;
-		}
-	}
+  .galleryContent {
+    .galleryItem {
+      width: 100%;
+    }
+  }
 }
